@@ -4,3 +4,4 @@
 *.kpj.user
 *.kmx
 *.kmp
+build/
