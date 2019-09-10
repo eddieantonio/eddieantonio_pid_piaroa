@@ -1,63 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Start Using Piaroa | Usando el teclado piaroa </title>
-  <style type="text/css">
-    body { font: 10pt Helvetica Neue, Tahoma, sans-serif }
-    h1, h2, th { font-weight: bold; color: #44c; }
-    h1 { font-size: larger; margin-bottom: 0.2rem }
-    h2 { font-size: large }
-    kbd {
-      display: inline-block;
+<?php
+  $pagename = 'Piaroa Keyboard Help';
+  $pagetitle = 'Piaroa Keyboard Help';
+  require_once('header.php');
+?>
 
-      min-width: 1em;
-      padding: .1rem .6rem;
-      border: 1px solid #adb3b9;
-      margin: 0 .1rem;
+<nav>
+  <p lang="es"> <a href="#pid_piaroa-es">Lee este documento en español.</a> </p> 
+</nav>
 
-      font-family: inherit;
-      font-size: 0.9em;
-      line-height: 1.4;
-      text-align: center;
-      white-space: nowrap;
+<a id="pid_piaroa-en">
 
-      color: #242729;
-      text-shadow: 0 1px 0 #FFF;
-      background-color: #e1e3e5;
-      box-shadow: 0 1px 0 rgba(12,13,14,0.2), 0 0 0 2px #FFF inset;
+<p>The Piaroa keyboard allows you to type Piaroa vowels which are not present in the Spanish alphabet. These vowels utilize the <kbd>AltGr</kbd> key, which is the <kbd>Alt</kbd> key to the right of the spacebar.</p>
 
-      border-radius: 3px;
-    }
-    table {
-      border-collapse: collapse;
-    }
-    th { text-align: left }
-    td:first-of-type { text-align: center }
-    td, th {
-      padding: 0.5rem 1rem;
-    }
-    .copyright {
-      font-size: smaller;
-      color: #555;
-    }
-    @media print {
-      @page{ margin: 2em }
-      body { font-size: 16pt }
-      table { margin: auto }
-      hr { page-break-after: always; border: 0 }
-    }
-  </style>
-</head>
-<body>
+<h1>Fonts</h1>
 
-<h1>Start Using Piaroa</h1>
+<p>There is no special font required to render Piaroa text, however, some fonts and applications struggle to render the combining cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) underneath the vowel.  On Windows, Calibri renders this correctly (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); on macOS, Helvetica Neue renders these characters correctly (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
 
-<p> To type the special vowels, this keyboard uses the <kbd>AltGr</kbd> key.
-This is the <kbd>Alt</kbd> or <kbd>⌥ Option</kbd> key to the
-<strong>right</strong> of the spacebar; the left <kbd>Alt</kbd> will
-<em>not</em> work!</p>
+<h1>Characters</h1>
 
+<p>Apart from the key sequences in the table below, all keys on a regular Latin keyboard should work the same as in your default keyboard layout. </p>
 <table>
   <thead>
     <tr>
@@ -79,9 +40,13 @@ This is the <kbd>Alt</kbd> or <kbd>⌥ Option</kbd> key to the
   </tbody>
 </table>
 
-<p class="copyright">© 2019 Eddie Antonio Santos</p>
+<h1>Keyboard Source</h1>
+
+<p>This keyboard is available online at <a href='https://keyman.com/keyboards/pid_piaroa'>keyman.com/keyboards/pid_piaroa</a></p>
 
 <hr>
+
+<a id="pid_piaroa-es">
 
 <h1 lang="es">Usando el teclado piaroa</h1>
 
@@ -90,6 +55,18 @@ hay en español.  La tecla <kbd>Alt Gr</kbd> es la tecla <kbd>Alt</kbd> u
 <kbd>⌥ Opción</kbd> que está ubicada al lado <strong>derecho</strong> de la
 barra espaciadora; la tecla <kbd>Alt</kbd> a la izquierda <em>no
 funcionará!</em></p>
+
+<h1 lang="es">Fuetes</h1>
+
+<p lang="es">Piaroa no requiere un fuente especial. Sin embargo, algunos fuentes no son capazes de renderizar la cedilla (<span style="font-family: Calibri, Helvetica Neue">&nbsp;&#x0327;</span>) debajo de vocales.  En sistemas Windows, el fuente Calibri renderiza la cedilla correctamente (<span style="font-family: Calibri">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>); en sistemas macOS, la fuente Helvetica Neue renderiza la cedilla correctamente (<span style="font-family: Helvetica Neue">a̧, ä̧, ȩ, i̧, o̧, ö̧, u̧</span>).</p>
+
+<aside>
+  <p>Anteriormente, era necesario usar el fuente piaroa SILSophia, pero este
+  fuente no es compatible con Unicode. Por eso, ya no es consegable usar un
+  fuente especial.</p>
+</aside>
+
+<h1 lang="es">Teclas</h1>
 
 <table lang="es">
   <thead>
@@ -112,7 +89,15 @@ funcionará!</em></p>
   </tbody>
 </table>
 
-<p lang="es" class="copyright">© 2019 Eddie Antonio Santos</p>
+<h1>Para descargar el teclado</h1>
 
-</body>
-</html>
+<p>Este teclado se puede decargar aquí: <a href='https://keyman.com/keyboards/pid_piaroa'>keyman.com/keyboards/pid_piaroa</a></p>
+
+<hr>
+
+<h1>Change History</h1>
+<p>1.1.1: Prepare for inclusion in Keyman Keyboards repository.</p>
+<p>1.1.0: Prevent inserting extraneous cedillas.</p>
+<p>1.0.0: Initial release.</p>
+
+<p>&copy; 2019 Eddie Antonio Santos</p>
